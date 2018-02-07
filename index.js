@@ -28,13 +28,19 @@ function viewCart() {
   if(cart.length === 2){
     console.log(`In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}) and ${Object.keys(cart[1])} at $${Object.values(cart[1])}) .`)
   }
+  if(cart.length >= 3){
+    for(var i=0; i<cart.length-1; i++){
+      allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
+    }
+    console.log(`In your cart, you have ${allContentsInCart} and ${Object.keys(cart[-1])} at $${Object.values(cart[-1])}`)
+  }
 }
 
-//   for(var i=0; i<cart.length; i++){
-//     allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
-//   }
-//   return `In your cart you have${allContentsInCart}.`
-// }
+  for(var i=0; i<cart.length; i++){
+    allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
+  }
+  return `In your cart you have${allContentsInCart}.`
+}
 
 
 function total() {

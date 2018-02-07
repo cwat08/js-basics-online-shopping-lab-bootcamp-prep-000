@@ -40,7 +40,7 @@ function viewCart() {
 
 function total() {
   var sumTotal = 0
-  for(i=0; i<cart.length; i++){
+  for(var i=0; i<cart.length; i++){
     sumTotal += Number(Object.values(cart[i]))
   }
   return sumTotal.toString()

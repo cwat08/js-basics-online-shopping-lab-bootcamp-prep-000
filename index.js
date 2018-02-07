@@ -36,12 +36,6 @@ function viewCart() {
   }
 }
 
-  for(var i=0; i<cart.length; i++){
-    allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
-  }
-  return `In your cart you have${allContentsInCart}.`
-}
-
 
 function total() {
   // write your code here

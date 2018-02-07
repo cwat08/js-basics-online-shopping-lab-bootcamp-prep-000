@@ -10,12 +10,22 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+var newItemforCart = {}
+newItemforCart[item] = (Math.floor(Math.random() * Math.floor(100)))
+cart.push(newItemforCart)
+console.log(`${item} has been added to your cart.`)
+return cart
 }
 
+
 function viewCart() {
-  // write your code here
+  var allContentsInCart = ""
+  for(var i=0; i<cart.length; i++){
+    allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
+  }
+  return `In your cart you have${allContentsInCart}.`
 }
+
 
 function total() {
   // write your code here

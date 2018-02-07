@@ -23,6 +23,9 @@ function viewCart() {
   if(!cart.length){
     console.log(`Your shopping cart is empty.`)
   }
+  if(cart.length === 1){
+    console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0]}`)
+  }
   for(var i=0; i<cart.length; i++){
     allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
   }

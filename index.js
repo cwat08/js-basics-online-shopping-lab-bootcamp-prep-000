@@ -52,6 +52,7 @@ function removeFromCart(item) {
     // if key value matches "item" - for in loop
     if(item in cart[i]){
       delete cart[i][item]
+      cart.splice(i,1)
       return cart
     }
   }

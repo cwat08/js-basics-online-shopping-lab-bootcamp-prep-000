@@ -47,8 +47,17 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
-}
+  //loop through array to look in each object
+  for(var i =0; i<cart.length; i++){
+    // if key value matches "item" - for in loop
+    if(item in cart[i]){
+      delete cart[i][item]
+      return cart
+    }
+  }
+  console.log('That item is not in your cart.')
+  return cart
+} 
 
 function placeOrder(cardNumber) {
   // write your code here

@@ -43,7 +43,7 @@ function total() {
   for(var i=0; i<cart.length; i++){
     sumTotal += Number(Object.values(cart[i]))
   }
-  return sumTotal.toString()
+  return sumTotal
 }
 
 function removeFromCart(item) {

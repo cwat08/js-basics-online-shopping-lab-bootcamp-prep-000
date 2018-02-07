@@ -19,7 +19,6 @@ return cart
 
 
 function viewCart() {
-  var allContentsInCart = ""
   if(!cart.length){
     console.log(`Your shopping cart is empty.`)
   }

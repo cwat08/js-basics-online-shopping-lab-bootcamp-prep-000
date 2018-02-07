@@ -26,11 +26,11 @@ function viewCart() {
   if(cart.length === 1){
     console.log(`In your cart, you have ${Object.keys(cart[0])} at $${cart[0]}`)
   }
-  for(var i=0; i<cart.length; i++){
-    allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
-  }
-  return `In your cart you have${allContentsInCart}.`
-}
+//   for(var i=0; i<cart.length; i++){
+//     allContentsInCart += ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`
+//   }
+//   return `In your cart you have${allContentsInCart}.`
+// }
 
 
 function total() {
